@@ -1,7 +1,6 @@
 # GEM-reduction-for-kinetic-modeling
---
 
-This repository contains all code, data, and resources supporting the manuscript **“Putting models in context: deriving a kinetic model of cancer metabolism that includes cellular growth using genome-scale stoichiometric reduction”** (Komkova et al., 2025). The analysis is organized into three subfolders, each with its own README:
+This repository contains code, data, and resources supporting the manuscript **“Putting models in context: deriving a kinetic model of cancer metabolism that includes cellular growth using genome-scale stoichiometric reduction”** (Komkova et al., 2025). The analysis is organized into three subfolders:
 
 - **reduction/**  
   MATLAB scripts for extracting the HT-29–specific genome-scale model and performing stoichiometric network reduction. Refer to `reduction/README.md` for details on model extraction and reduction workflows.

@@ -48,15 +48,6 @@ This directory contains MATLAB scripts to perform Monte-Carlo sampling of enzyme
 
 ---
 
-## Configuration Tips
-
-- **Iterations:** Increase for better convergence  
-- **Bounds (`F1`, `F2`):** Default covers 0.1×–10× nominal values  
-- **Reproducibility:** Set `seed` before sampling  
-- **Stability filter:** Only samples with negative eigenvalues retained  
-
----
-
 ## Acknowledgments
 
 Original sampling implementation adapted from [klamt-lab/Models_E.coli_High_ATP_Demand](https://github.com/klamt-lab/Models_E.coli_High_ATP_Demand)  
