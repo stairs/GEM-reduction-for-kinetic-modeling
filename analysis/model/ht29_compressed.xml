@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" level="3" version="1" fbc:required="false">
+  <model metaid="CNA_stoichiometric_model" id="CNA_stoichiometric_model" name="CNA_stoichiometric_model" fbc:strict="true">
+    <notes>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <p>This file was generated using the exportModel function in RAVEN Toolbox 2 and OutputSBML in libSBML </p>
+      </body>
+    </notes>
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#CNA_stoichiometric_model">
+          <dcterms:creator>
+            <rdf:Bag/>
+          </dcterms:creator>
+          <dcterms:created rdf:parseType="Resource">
+            <dcterms:W3CDTF>2023-06-14T17:51:41Z</dcterms:W3CDTF>
+          </dcterms:created>
+          <dcterms:modified rdf:parseType="Resource">
+            <dcterms:W3CDTF>2023-06-14T17:51:41Z</dcterms:W3CDTF>
+          </dcterms:modified>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+    <listOfUnitDefinitions>
+      <unitDefinition id="mmol_per_gDW_per_hr">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-3" multiplier="1"/>
+          <unit kind="gram" exponent="-1" scale="0" multiplier="1"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="3600"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment metaid="Internal_Species" sboTerm="SBO:0000290" id="Internal_Species" name="Internal_Species" spatialDimensions="3" size="1" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species metaid="M_MAM00247c" sboTerm="SBO:0000247" id="M_MAM00247c" name="1,3-bisphospho-D-glycerate_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM00913c" sboTerm="SBO:0000247" id="M_MAM00913c" name="3-phospho-D-glycerate_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM00916c" sboTerm="SBO:0000247" id="M_MAM00916c" name="3-phosphoserine_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01261m" sboTerm="SBO:0000247" id="M_MAM01261m" name="acetyl-CoA_m_m" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01285c" sboTerm="SBO:0000247" id="M_MAM01285c" name="ADP_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01285m" sboTerm="SBO:0000247" id="M_MAM01285m" name="ADP_m_m" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01306c" sboTerm="SBO:0000247" id="M_MAM01306c" name="AKG_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01307c" sboTerm="SBO:0000247" id="M_MAM01307c" name="alanine_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01334c" sboTerm="SBO:0000247" id="M_MAM01334c" name="AMP_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01370c" sboTerm="SBO:0000247" id="M_MAM01370c" name="aspartate_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01371c" sboTerm="SBO:0000247" id="M_MAM01371c" name="ATP_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01587c" sboTerm="SBO:0000247" id="M_MAM01587c" name="citrate_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01587m" sboTerm="SBO:0000247" id="M_MAM01587m" name="citrate_m_m" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01596c" sboTerm="SBO:0000247" id="M_MAM01596c" name="CO2_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01596m" sboTerm="SBO:0000247" id="M_MAM01596m" name="CO2_m_m" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01597m" sboTerm="SBO:0000247" id="M_MAM01597m" name="CoA_m_m" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01690c" sboTerm="SBO:0000247" id="M_MAM01690c" name="DHAP_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01700c" sboTerm="SBO:0000247" id="M_MAM01700c" name="dihydrofolate_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01830c" sboTerm="SBO:0000247" id="M_MAM01830c" name="folate_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01841c" sboTerm="SBO:0000247" id="M_MAM01841c" name="fructose-1,6-bisphosphate_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01845c" sboTerm="SBO:0000247" id="M_MAM01845c" name="fructose-6-phosphate_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01862m" sboTerm="SBO:0000247" id="M_MAM01862m" name="fumarate_m_m" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01934c" sboTerm="SBO:0000247" id="M_MAM01934c" name="gamma-linolenoyl-CoA_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01939c" sboTerm="SBO:0000247" id="M_MAM01939c" name="GAP_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM01968c" sboTerm="SBO:0000247" id="M_MAM01968c" name="glucose-6-phosphate_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02039c" sboTerm="SBO:0000247" id="M_MAM02039c" name="H+_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02039m" sboTerm="SBO:0000247" id="M_MAM02039m" name="H+_m_m" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02039e" sboTerm="SBO:0000247" id="M_MAM02039e" name="H+_e_e" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02040c" sboTerm="SBO:0000247" id="M_MAM02040c" name="H2O_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02040m" sboTerm="SBO:0000247" id="M_MAM02040m" name="H2O_m_m" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02040e" sboTerm="SBO:0000247" id="M_MAM02040e" name="H2O_e_e" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02046c" sboTerm="SBO:0000247" id="M_MAM02046c" name="HCO3-_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02125c" sboTerm="SBO:0000247" id="M_MAM02125c" name="histidine_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02171c" sboTerm="SBO:0000247" id="M_MAM02171c" name="inositol_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02183m" sboTerm="SBO:0000247" id="M_MAM02183m" name="isocitrate_m_m" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02390c" sboTerm="SBO:0000247" id="M_MAM02390c" name="linolenoyl-CoA_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02439c" sboTerm="SBO:0000247" id="M_MAM02439c" name="malate_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02519c" sboTerm="SBO:0000247" id="M_MAM02519c" name="Na+_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02552c" sboTerm="SBO:0000247" id="M_MAM02552c" name="NAD+_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02552m" sboTerm="SBO:0000247" id="M_MAM02552m" name="NAD+_m_m" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02554c" sboTerm="SBO:0000247" id="M_MAM02554c" name="NADP+_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02554m" sboTerm="SBO:0000247" id="M_MAM02554m" name="NADP+_m_m" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02630c" sboTerm="SBO:0000247" id="M_MAM02630c" name="O2_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02630m" sboTerm="SBO:0000247" id="M_MAM02630m" name="O2_m_m" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02633c" sboTerm="SBO:0000247" id="M_MAM02633c" name="OAA_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02666c" sboTerm="SBO:0000247" id="M_MAM02666c" name="oxidized_thioredoxin_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02751c" sboTerm="SBO:0000247" id="M_MAM02751c" name="Pi_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02819c" sboTerm="SBO:0000247" id="M_MAM02819c" name="pyruvate_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02896c" sboTerm="SBO:0000247" id="M_MAM02896c" name="serine_c_c" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM03102m" sboTerm="SBO:0000247" id="M_MAM03102m" name="ubiquinol_m_m" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM02039i" sboTerm="SBO:0000247" id="M_MAM02039i" name="H+_i_i" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_MAM03971e" sboTerm="SBO:0000247" id="M_MAM03971e" name="biomass_e_e" compartment="Internal_Species" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="FB1N1000" value="-1000" constant="true"/>
+      <parameter id="FB2N0" value="0" constant="true"/>
+      <parameter id="FB3N0" value="0.005" constant="true"/>
+      <parameter id="FB4N0" value="0.012062" constant="true"/>
+      <parameter id="FB5N0" value="0.05" constant="true"/>
+      <parameter id="FB6N5" value="5" constant="true"/>
+      <parameter id="FB7N500" value="500" constant="true"/>
+      <parameter id="FB8N1000" value="1000" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction metaid="R_MAR10024" sboTerm="SBO:0000176" id="R_MAR10024" name="MAR10024" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM03971e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="big_lumped" sboTerm="SBO:0000176" id="big_lumped" name="big_lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB4N0">
+        <listOfReactants>
+          <speciesReference species="M_MAM00247c" stoichiometry="0.0057126" constant="true"/>
+          <speciesReference species="M_MAM00913c" stoichiometry="0.0089769" constant="true"/>
+          <speciesReference species="M_MAM00916c" stoichiometry="0.010201" constant="true"/>
+          <speciesReference species="M_MAM01261m" stoichiometry="22.7928" constant="true"/>
+          <speciesReference species="M_MAM01306c" stoichiometry="0.061438" constant="true"/>
+          <speciesReference species="M_MAM01307c" stoichiometry="3.773" constant="true"/>
+          <speciesReference species="M_MAM01334c" stoichiometry="1.3021" constant="true"/>
+          <speciesReference species="M_MAM01370c" stoichiometry="5.0986" constant="true"/>
+          <speciesReference species="M_MAM01371c" stoichiometry="527.6657" constant="true"/>
+          <speciesReference species="M_MAM01587c" stoichiometry="0.018758" constant="true"/>
+          <speciesReference species="M_MAM01690c" stoichiometry="1.6481" constant="true"/>
+          <speciesReference species="M_MAM01841c" stoichiometry="0.035908" constant="true"/>
+          <speciesReference species="M_MAM01845c" stoichiometry="1.3897" constant="true"/>
+          <speciesReference species="M_MAM01934c" stoichiometry="0.59801" constant="true"/>
+          <speciesReference species="M_MAM01939c" stoichiometry="0.59078" constant="true"/>
+          <speciesReference species="M_MAM01968c" stoichiometry="3.4843" constant="true"/>
+          <speciesReference species="M_MAM02039m" stoichiometry="1.7439" constant="true"/>
+          <speciesReference species="M_MAM02039e" stoichiometry="2.7429" constant="true"/>
+          <speciesReference species="M_MAM02040c" stoichiometry="427.6917" constant="true"/>
+          <speciesReference species="M_MAM02046c" stoichiometry="17.2058" constant="true"/>
+          <speciesReference species="M_MAM02125c" stoichiometry="1.0368" constant="true"/>
+          <speciesReference species="M_MAM02171c" stoichiometry="0.12918" constant="true"/>
+          <speciesReference species="M_MAM02183m" stoichiometry="0.00081609" constant="true"/>
+          <speciesReference species="M_MAM02390c" stoichiometry="0.080426" constant="true"/>
+          <speciesReference species="M_MAM02439c" stoichiometry="0.033051" constant="true"/>
+          <speciesReference species="M_MAM02630c" stoichiometry="3.9277" constant="true"/>
+          <speciesReference species="M_MAM02630m" stoichiometry="0.0047112" constant="true"/>
+          <speciesReference species="M_MAM02819c" stoichiometry="0.13873" constant="true"/>
+          <speciesReference species="M_MAM02896c" stoichiometry="10.543" constant="true"/>
+          <speciesReference species="M_MAM02039i" stoichiometry="0.00052256" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01285c" stoichiometry="529.0358" constant="true"/>
+          <speciesReference species="M_MAM01285m" stoichiometry="0.74562" constant="true"/>
+          <speciesReference species="M_MAM01596c" stoichiometry="20.8124" constant="true"/>
+          <speciesReference species="M_MAM01596m" stoichiometry="1.3352" constant="true"/>
+          <speciesReference species="M_MAM01597m" stoichiometry="24.9797" constant="true"/>
+          <speciesReference species="M_MAM01700c" stoichiometry="0.067599" constant="true"/>
+          <speciesReference species="M_MAM01830c" stoichiometry="0.00034939" constant="true"/>
+          <speciesReference species="M_MAM01862m" stoichiometry="1.3267" constant="true"/>
+          <speciesReference species="M_MAM02039c" stoichiometry="418.2925" constant="true"/>
+          <speciesReference species="M_MAM02040m" stoichiometry="0.58864" constant="true"/>
+          <speciesReference species="M_MAM02040e" stoichiometry="0.00034939" constant="true"/>
+          <speciesReference species="M_MAM02519c" stoichiometry="7.8548" constant="true"/>
+          <speciesReference species="M_MAM02552c" stoichiometry="6.0451" constant="true"/>
+          <speciesReference species="M_MAM02552m" stoichiometry="2.2579" constant="true"/>
+          <speciesReference species="M_MAM02554c" stoichiometry="40.7964" constant="true"/>
+          <speciesReference species="M_MAM02554m" stoichiometry="0.00096928" constant="true"/>
+          <speciesReference species="M_MAM02633c" stoichiometry="0.0048844" constant="true"/>
+          <speciesReference species="M_MAM02666c" stoichiometry="0.15855" constant="true"/>
+          <speciesReference species="M_MAM02751c" stoichiometry="538.7872" constant="true"/>
+          <speciesReference species="M_MAM03102m" stoichiometry="0.88509" constant="true"/>
+          <speciesReference species="M_MAM03971e" stoichiometry="8.4394" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR11404_R_MAR09030_lumped" sboTerm="SBO:0000176" id="R_MAR11404_R_MAR09030_lumped" name="MAR11404*R_MAR09030*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02439c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_MAR06373_R_MAR07811_R_MAR09070_lumped" sboTerm="SBO:0000176" id="R_MAR06373_R_MAR07811_R_MAR09070_lumped" name="MAR06373*R_MAR07811*R_MAR09070*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB5N0">
+        <listOfReactants>
+          <speciesReference species="M_MAM02039e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01370c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02519c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR07152_R_MAR09035_lumped" sboTerm="SBO:0000176" id="R_MAR07152_R_MAR09035_lumped" name="MAR07152*R_MAR09035*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N0">
+        <listOfReactants>
+          <speciesReference species="M_MAM01371c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01334c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR01604_R_MAR01608_R_MAR01611_R_MAR01620_R_MAR01806_R_MAR01802_R_MAR01602_R_MAR03214_lumped" sboTerm="SBO:0000176" id="R_MAR01604_R_MAR01608_R_MAR01611_R_MAR01620_R_MAR01806_R_MAR01802_R_MAR01602_R_MAR03214_lumped" name="MAR01604*R_MAR01608*R_MAR01611*R_MAR01620*R_MAR01806*R_MAR01802*R_MAR01602*R_MAR03214*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02039m" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_MAM02552c" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_MAM02630c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02039c" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_MAM02552m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02554c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02630m" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR06332_R_MAR02352_R_MAR02358_lumped" sboTerm="SBO:0000176" id="R_MAR06332_R_MAR02352_R_MAR02358_lumped" name="MAR06332*R_MAR02352*R_MAR02358*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02040m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02554m" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01285m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM01371c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039m" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR02981_R_MAR02746_R_MAR02859_R_MAR02884_R_MAR02314_R_MAR02711_R_MAR02857_R_MAR02886_lumped" sboTerm="SBO:0000176" id="R_MAR02981_R_MAR02746_R_MAR02859_R_MAR02884_R_MAR02314_R_MAR02711_R_MAR02857_R_MAR02886_lumped" name="MAR02981*R_MAR02746*R_MAR02859*R_MAR02884*R_MAR02314*R_MAR02711*R_MAR02857*R_MAR02886*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02390c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01934c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR00152" sboTerm="SBO:0000176" id="R_MAR00152" name="MAR00152" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02630c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01934c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02040c" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_MAM02552c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR00125" sboTerm="SBO:0000176" id="R_MAR00125" name="MAR00125" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01587c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01587m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02439c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04388_R_MAR09135_R_MAR05998_lumped" sboTerm="SBO:0000176" id="R_MAR04388_R_MAR09135_R_MAR05998_lumped" name="MAR04388*R_MAR09135*R_MAR05998*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02039c" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_MAM02819c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02039e" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02552c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR09079" sboTerm="SBO:0000176" id="R_MAR09079" name="MAR09079" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02039e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_MAR05448_R_MAR09078_lumped" sboTerm="SBO:0000176" id="R_MAR05448_R_MAR09078_lumped" name="MAR05448*R_MAR09078*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02046c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02519c" stoichiometry="2" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_MAR06381_R_MAR09069_lumped" sboTerm="SBO:0000176" id="R_MAR06381_R_MAR09069_lumped" name="MAR06381*R_MAR09069*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB5N0">
+        <listOfReactants>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02039e" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02519c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02896c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR09605_R_MAR09061_lumped" sboTerm="SBO:0000176" id="R_MAR09605_R_MAR09061_lumped" name="MAR09605*R_MAR09061*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB5N0">
+        <listOfReactants>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01307c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039e" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02519c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04896_R_MAR09048_lumped" sboTerm="SBO:0000176" id="R_MAR04896_R_MAR09048_lumped" name="MAR04896*R_MAR09048*lumped" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02630c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_MAR09047" sboTerm="SBO:0000176" id="R_MAR09047" name="MAR09047" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02040e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_MAR00348_R_MAR00349_R_MAR09036_lumped" sboTerm="SBO:0000176" id="R_MAR00348_R_MAR00349_R_MAR09036_lumped" name="MAR00348*R_MAR00349*R_MAR09036*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N0">
+        <listOfReactants>
+          <speciesReference species="M_MAM01371c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01334c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02390c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04394_R_MAR05029_R_MAR09034_lumped" sboTerm="SBO:0000176" id="R_MAR04394_R_MAR05029_R_MAR09034_lumped" name="MAR04394*R_MAR05029*R_MAR09034*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB6N5">
+        <listOfReactants>
+          <speciesReference species="M_MAM01371c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01285c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM01968c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR06328" sboTerm="SBO:0000176" id="R_MAR06328" name="MAR06328" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01285c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01285m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM01371c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR05043" sboTerm="SBO:0000176" id="R_MAR05043" name="MAR05043" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02751c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039i" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02039m" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04335_R_MAR04656_R_MAR05006_R_MAR03952_lumped" sboTerm="SBO:0000176" id="R_MAR04335_R_MAR04656_R_MAR05006_R_MAR03952_lumped" name="MAR04335*R_MAR04656*R_MAR05006*R_MAR03952*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01830c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039m" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02554m" stoichiometry="2" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04964" sboTerm="SBO:0000176" id="R_MAR04964" name="MAR04964" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01587m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02439c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01587c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04137_R_MAR04926_lumped" sboTerm="SBO:0000176" id="R_MAR04137_R_MAR04926_lumped" name="MAR04137*R_MAR04926*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01597m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02552m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02819c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01261m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM01596m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039m" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04922" sboTerm="SBO:0000176" id="R_MAR04922" name="MAR04922" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01596c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01596m" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04888" sboTerm="SBO:0000176" id="R_MAR04888" name="MAR04888" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02040c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02040m" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR03964" sboTerm="SBO:0000176" id="R_MAR03964" name="MAR03964" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01371c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02040c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01285c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02751c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR09611" sboTerm="SBO:0000176" id="R_MAR09611" name="MAR09611" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02039e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02171c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR06384" sboTerm="SBO:0000176" id="R_MAR06384" name="MAR06384" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02039e" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02125c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02519c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR05070" sboTerm="SBO:0000176" id="R_MAR05070" name="MAR05070" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02125c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_MAR04885" sboTerm="SBO:0000176" id="R_MAR04885" name="MAR04885" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02040c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02040e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04861" sboTerm="SBO:0000176" id="R_MAR04861" name="MAR04861" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02171c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_MAR03955" sboTerm="SBO:0000176" id="R_MAR03955" name="MAR03955" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01596c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02040c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02046c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04655" sboTerm="SBO:0000176" id="R_MAR04655" name="MAR04655" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01830c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01700c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02554c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04654" sboTerm="SBO:0000176" id="R_MAR04654" name="MAR04654" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01830c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01700c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02552c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04444_R_MAR04440_lumped" sboTerm="SBO:0000176" id="R_MAR04444_R_MAR04440_lumped" name="MAR04444*R_MAR04440*lumped" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02552m" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02554m" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04333" sboTerm="SBO:0000176" id="R_MAR04333" name="MAR04333" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01700c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02554c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR06921" sboTerm="SBO:0000176" id="R_MAR06921" name="MAR06921" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02039m" stoichiometry="5" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02552m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM03102m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039i" stoichiometry="4" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR06914_R_MAR06918_lumped" sboTerm="SBO:0000176" id="R_MAR06914_R_MAR06918_lumped" name="MAR06914*R_MAR06918*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB7N500">
+        <listOfReactants>
+          <speciesReference species="M_MAM02039m" stoichiometry="12" constant="true"/>
+          <speciesReference species="M_MAM02630m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM03102m" stoichiometry="2" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02040m" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_MAM02039i" stoichiometry="12" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR06916" sboTerm="SBO:0000176" id="R_MAR06916" name="MAR06916" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01285m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039i" stoichiometry="3" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02039m" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_MAM02040m" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR03957_R_MAR05297_lumped" sboTerm="SBO:0000176" id="R_MAR03957_R_MAR05297_lumped" name="MAR03957*R_MAR05297*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01597m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02183m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02552m" stoichiometry="2" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01596m" stoichiometry="2" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04652" sboTerm="SBO:0000176" id="R_MAR04652" name="MAR04652" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01862m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM03102m" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_MAR04410_R_MAR04456_lumped" sboTerm="SBO:0000176" id="R_MAR04410_R_MAR04456_lumped" name="MAR04410*R_MAR04456*lumped" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01587m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM01862m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02040m" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02183m" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04152" sboTerm="SBO:0000176" id="R_MAR04152" name="MAR04152" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01285m" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01597m" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04141_R_MAR04145_lumped" sboTerm="SBO:0000176" id="R_MAR04141_R_MAR04145_lumped" name="MAR04141*R_MAR04145*lumped" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01587m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM01597m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039m" stoichiometry="2" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01261m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02040m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02552m" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04139" sboTerm="SBO:0000176" id="R_MAR04139" name="MAR04139" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02633c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02439c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02552c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR03843" sboTerm="SBO:0000176" id="R_MAR03843" name="MAR03843" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM00916c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02040c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02751c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02896c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR03839_R_MAR03841_lumped" sboTerm="SBO:0000176" id="R_MAR03839_R_MAR03841_lumped" name="MAR03839*R_MAR03841*lumped" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM00913c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02552c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM00916c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM01306c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR03899" sboTerm="SBO:0000176" id="R_MAR03899" name="MAR03899" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01306c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM01307c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02819c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR03829" sboTerm="SBO:0000176" id="R_MAR03829" name="MAR03829" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01306c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM01370c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02633c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR03931" sboTerm="SBO:0000176" id="R_MAR03931" name="MAR03931" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02666c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02554c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04612" sboTerm="SBO:0000176" id="R_MAR04612" name="MAR04612" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01285c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM02040c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02666c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04391" sboTerm="SBO:0000176" id="R_MAR04391" name="MAR04391" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01690c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01939c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04381" sboTerm="SBO:0000176" id="R_MAR04381" name="MAR04381" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01845c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01968c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04375" sboTerm="SBO:0000176" id="R_MAR04375" name="MAR04375" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01690c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM01939c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01841c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04373" sboTerm="SBO:0000176" id="R_MAR04373" name="MAR04373" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM00247c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01939c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02552c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02751c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04368" sboTerm="SBO:0000176" id="R_MAR04368" name="MAR04368" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM00247c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM01285c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM00913c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM01371c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04358_R_MAR04363_R_MAR04365_lumped" sboTerm="SBO:0000176" id="R_MAR04358_R_MAR04363_R_MAR04365_lumped" name="MAR04358*R_MAR04363*R_MAR04365*lumped" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM00913c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM01285c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01371c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02040c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02819c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_MAR04379" sboTerm="SBO:0000176" id="R_MAR04379" name="MAR04379" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB8N1000">
+        <listOfReactants>
+          <speciesReference species="M_MAM01371c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM01845c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_MAM01285c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM01841c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_MAM02039c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+    <fbc:listOfObjectives fbc:activeObjective="obj">
+      <fbc:objective fbc:id="obj" fbc:type="maximize">
+        <fbc:listOfFluxObjectives>
+          <fbc:fluxObjective fbc:reaction="R_MAR10024" fbc:coefficient="1"/>
+        </fbc:listOfFluxObjectives>
+      </fbc:objective>
+    </fbc:listOfObjectives>
+  </model>
+</sbml>
