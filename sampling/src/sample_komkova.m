@@ -142,6 +142,8 @@ for c = 1:iterations
 
     if(ok == 1)
         nOfSS = nOfSS + 1;
+        %---- COMPUTING AND RECORDING ELASTICITY COEFFICIENTS ----%
+        E_rec(:,:,nOfSS) = dfodc .* (nrmlz3(:,:))';
 
         %---- COMPUTING CONCENTRATION and FLUX CONTROL COEFFICIENTS ----%
         CS_f(:,:) = -( Link*(inv(RedJac1(:,:)))*RedSto);
